@@ -1,3 +1,4 @@
+#Problema 1
 def get_largest_prime_below(n):
     maxim=0
     for x in range(2,n-1):
@@ -7,6 +8,7 @@ def get_largest_prime_below(n):
         if ok==1 and x>maxim: maxim=x
     return maxim
 
+#Problema 5
 def is_palindrome(n):
     invers=0
     aux=n
@@ -20,9 +22,9 @@ def is_palindrome(n):
         return 0
    
 def test_get_largest_prime_below():
-    assert get_largestprime_below(15) == 13
-    assert get_largestprime_below(9) == 7
-    assert get_largestprime_below(5) == 3
+    assert get_largest_prime_below(15) == 13
+    assert get_largest_prime_below(9) == 7
+    assert get_largest_prime_below(5) == 3
 
 def test_is_palindrome():
     assert is_palindrome(131) == True
