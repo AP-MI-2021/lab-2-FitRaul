@@ -9,7 +9,7 @@ def get_largest_prime_below(n):
     return maxim
 
 #Problema 5
-def is_palindrome(n):
+def is_palindrome(n) -> bool:
     invers=0
     aux=n
     while aux!=0:
