@@ -18,3 +18,13 @@ def is_palindrome(n):
         return 1
     else:
         return 0
+   
+def test_get_largest_prime_below():
+    assert get_largestprime_below(15) == 13
+    assert get_largestprime_below(9) == 7
+    assert get_largestprime_below(5) == 3
+
+def test_is_palindrome():
+    assert is_palindrome(131) == True
+    assert is_palindrome(222) == True
+    assert is_palindrome(214) == False
