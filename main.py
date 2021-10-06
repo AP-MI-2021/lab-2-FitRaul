@@ -17,9 +17,9 @@ def is_palindrome(n):
         invers=invers*10+cifra
         aux=aux//10
     if invers==n:
-        return 1
+        return true
     else:
-        return 0
+        return false
    
 def test_get_largest_prime_below():
     assert get_largest_prime_below(15) == 13
