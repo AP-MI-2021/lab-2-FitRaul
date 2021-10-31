@@ -28,7 +28,7 @@ def is_palindrome(n):
     else:
         return False
    
-
+#Problema 12
 def get_perfect_squares(start: int, end: int):
     """
     Determina toate patratele perfecte dintr un interval.
