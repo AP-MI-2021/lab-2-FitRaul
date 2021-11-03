@@ -85,11 +85,15 @@ def test_get_perfect_squares():
         elif optiune == "3":
             start = input('Dati primul capat al intervalului')
             end = input('Dati ultimul capat al intervalului')
-            print('Patratele perfecte din intervalul [{start},{end}] sunt {get_perfect_squares(start: int, end: int)}')
+            lst=get_perfect_squares(start: int, end: int)
+            print(lst)
         elif optiune == "x":
             run = False
         else:
             print("Opțiune greșită! Reincercați!")
 
 if __name__ == '__main__':
+    test_get_largest_prime_below()
+    test_is_palindrome()
+    test_get_perfect_squares()
     main()
