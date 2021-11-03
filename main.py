@@ -83,9 +83,9 @@ def test_get_perfect_squares():
             else:
                print("Nr nu este palindrom")
         elif optiune == "3":
-            start = input('Dati primul capat al intervalului')
-            end = input('Dati ultimul capat al intervalului')
-            lst=get_perfect_squares(start: int, end: int)
+            start = int(input('Dati primul capat al intervalului'))
+            end = int(input('Dati ultimul capat al intervalului'))
+            lst = get_perfect_squares(start, end)
             print(lst)
         elif optiune == "x":
             run = False
