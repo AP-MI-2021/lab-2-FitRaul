@@ -63,3 +63,33 @@ def test_get_perfect_squares():
     assert get_perfect_squares(1,16) == [1,4,9,16]
     assert get_perfect_squares(2,25) == [4,9,16,25]
     assert get_perfect_squares(5,36) == [9,16,25,36]
+
+    
+ def main():
+    run=True
+    while run:
+        print("1.Determina cel mai mare numar prim mai mic decat un numar dat. ")
+        print("2.Verifica daca un numar este palindrom")
+        print("3. Determina toate patratele perfecte dintr un interval.")
+        print("x. Iesire")
+        optiune = input("Dati opțiunea: ")
+        if optiune == "1":
+           n=input('Introduceti un numar natural:')
+           print('Cel mai mare numar prim mai mic decat n este {get_largest_prime_below(n)}')
+        elif optiune == "2":
+           n = int(input("Dati un nr :"))
+           if is_palindrome(n):
+               print("Nr este palindrom")
+            else:
+               print("Nr nu este palindrom")
+        elif optiune == "3":
+            start = input('Dati primul capat al intervalului')
+            end = input('Dati ultimul capat al intervalului')
+            print('Patratele perfecte din intervalul [{start},{end}] sunt {get_perfect_squares(start: int, end: int)}')
+        elif optiune == "x":
+            run = False
+        else:
+            print("Opțiune greșită! Reincercați!")
+
+if __name__ == '__main__':
+    main()
